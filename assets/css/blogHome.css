@@ -107,14 +107,141 @@ h4 {
 
 .container {
     max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
+/* HEADER START */
 
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 16px 15px 0;
+}
+
+.user,
+.icons {
+    display: none;
+}
+
+.avatarDesktop img,
+.avatarMobile img {
+    border-radius: 50%;
+}
+
+.subMenu {
+    position: absolute;
+    right: 15px;
+    top: 60px;
+    width: 300px;
+    background-color: var(--bg-primary-cyanBlue);
+    max-height: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.subMenu.openMenu {
+    max-height: 400px;
+}
+
+.subMenu hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-primary-black);
+    margin: 15px 0 10px;
+}
+
+.userInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px 0;
+}
+
+.subMenuLink {
+    display: grid;
+    gap: 10px;
+}
+
+.subMenuLink li {
+    display: flex;
+    gap: 8px;
+    padding: 0 20px;
+}
+
+.subMenuLink li:last-child {
+    padding-bottom: 20px;
+}
+
+.subMenuLink li a:last-child {
+    margin-left: auto;
+    font-size: 18px;
+}
+
+/* HEADER END */
+
+
+/* HERO START */
+
+
+/* HERO END */
+    
 
 
 
 
 @media (min-width: 768px) {
+
+    .container {
+        padding: 0;
+    }
+
+
+    /* HEADER START */
+    header {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 16px 0 0;
+    }
+
+    .user,
+    .icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8px;
+    align-items: center;
+    }
+
+    .icons {
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+
+    .avatarMobile {
+        display: none;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 48px;
+        align-items: center;
+    }
+    /* HEADER END */
+
+
+    /* HERO START */
+
+
+    /* HERO END */
     
 }
 

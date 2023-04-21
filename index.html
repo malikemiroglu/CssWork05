@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css?v=1">
     <link rel="stylesheet" href="assets/css/blogHome.css?v=1">
@@ -11,27 +12,97 @@
 </head>
 <body>
 
+    <!-- HEADER START -->
+    <header>
+        
+        <img src="assets/img/navbar/logo.svg" alt="logo">
+
+        <nav>
+
+            <a href="#" class="avatarMobile"><img src="assets/img/navbar/avatar.svg" alt="" onclick="toggleMenu()"></a>
+
+            <!-- user -->
+            <div class="user">
+                <a href="#" class="avatarDesktop"><img src="assets/img/navbar/avatar.svg" alt="" onclick="toggleMenu()"></a>
+                <a href="#" class="textRoboto" onclick="toggleMenu()">Bruce Lee</a>
+                <a href="#" onclick="toggleMenu()"><img src="assets/img/buttons/down-button-dark.svg" alt=""></a>
+            </div>
+            <!-- user end-->
+
+            <!-- subMenu -->
+            <div class="subMenu" id="subMenu">
+                <div class="userInfo">
+                    <a href="#" class="avatarDesktop"><img src="assets/img/navbar/avatar.svg" alt=""></a>
+                    <p class="textRoboto">Bruce Lee</p>
+                </div>
+
+                <hr>
+
+                <ul class="subMenuLink">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#">Edit Profile</a>
+                        <a href="#">></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-gear"></i></a>
+                        <a href="#">Settings & Privacy</a>
+                        <a href="#">></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        <a href="#">Help & Support</a>
+                        <a href="#">></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                        <a href="#">Logout</a>
+                        <a href="#">></a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!-- subMenu end -->
+
+            <!-- icons -->
+            <div class="icons">
+                <a href="#"><img src="assets/img/navbar/gift.svg" alt="gift"></a>
+                <a href="#"><img src="assets/img/navbar/notification.svg" alt="notification"></a>
+            </div>
+            <!-- icons end-->
+
+        </nav>
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO start -->
+    <section class="hero">
+            
+    </section>
+    <!-- HERO end -->
+    
+    <!-- CONTAINER START -->
     <div class="container">
 
-        <header>
-            
-            <img src="assets/img/navbar/logo.svg" alt="logo">
-
-            <nav>
-                <div class="user">
-                    
-                </div>
-
-                <div class="icons">
-                    <a href="#"><img src="assets/img/navbar/gift.svg" alt="gift"></a>
-                    <a href="#"><img src="assets/img/navbar/notification.svg" alt="notification"></a>
-                </div>
-            </nav>
-
-        </header>
-
+        <!-- CARDS -->
+        <section class="cards">
+            <h3>Featured articles</h3>
+        </section>
+        <!-- CARDS end -->
+        
 
     </div>
+    <!-- CONTAINER END -->
 
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("openMenu");
+        }
+    </script>
 </body>
 </html>
