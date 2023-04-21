@@ -1,0 +1,35 @@
+:root {
+    /* colors */
+    --primary-blue: #0D6EFD;
+
+    --bg-gray: #EAEAEA; 
+
+    --white: #FFFFFF;
+
+
+
+    /* text colors */
+    --text-primary-black: #212121;
+    --text-secondry-black: #1E1E1E;
+    --text-gray: #52647C;
+
+}
+
+
+* {
+    font-size: 30px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #D8D8D800;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: #D8D8D800;
+    }
+}
+
