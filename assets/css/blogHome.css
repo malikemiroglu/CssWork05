@@ -92,16 +92,20 @@ h4 {
     font-size: 23px;
     line-height: 32px;
     padding: 16px 72px;
+    background-color: var(--primary-blue);
     color: var(--white);
     display: inline-block;
+    border-radius: 3px;
 }
 
 .btnSmall {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     padding: 4px 24px;
+    background-color: var(--primary-blue);
     color: var(--white);
     display: inline-block;
+    border-radius: 3px;
 }
 /* buttons end */
 
@@ -193,9 +197,93 @@ header {
 
 
 /* HERO END */
+
+
+
+/* CARDS START */
+.tripleCards {
+    padding: 40px 0;
+}
+
+.tripleCards h3 {
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--bg-gray);
+}
+
+.tripleCards .card-items {
+    display: grid;
+    gap: 24px;
+}
+
+.tripleCards .card .mainImg {
+    border-radius: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.tripleCards .card-text {
+    display: grid;
+    gap: 8px;
+}
+
+.tripleCards .cardUser {
+    display: grid;
+    grid-template-columns: 28px auto;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.tripleCards .cardUser img {
+    border-radius: 50%;
+}
+
+/* CARDS END */
     
 
+/* callToAction START */
+.callToAction {
+    padding: 28px 0;
+}
 
+.callToActionBg {
+    background-color: var(--text-primary-black);
+    border-radius: 12px;
+    padding: 24px 0;
+    padding-left: 32px;
+}
+
+.callToActionContent {
+    margin-bottom: 24px;
+
+}
+
+.callToActionContent .btnSmall {
+    margin-bottom: 16px;
+}
+
+.callToActionContent h2 {
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.callToActionContent .cardUser {
+    display: grid;
+    grid-template-columns: 28px auto;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.callToActionContent .cardUser img {
+    border-radius: 50%;
+}
+
+.callToActionContent span {
+    color: var(--white);
+}
+
+
+/* callToAction END */
 
 
 @media (min-width: 768px) {
@@ -242,6 +330,32 @@ header {
 
 
     /* HERO END */
+
+
+    /* CARDS START */
+    .tripleCards {
+        padding: 80px 0;
+    }
+
+    .cards h3 {
+        padding-bottom: 24px;
+        margin-bottom: 40px;
+    }
+
+    /* CARDS END */
     
+
+    /* callToAction START */
+    .callToAction {
+        padding: 56px 0;
+    }
+
+    .callToActionBg {
+        background-color: var(--text-primary-black);
+        padding-left: 64px;
+
+    }
+    /* callToAction END */
+
 }
 
