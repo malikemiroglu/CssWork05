@@ -229,6 +229,16 @@ h4 {
         align-items: flex-start;
     }
 
+    .heroButtons {
+        display: none;
+    }
+
+    .heroButtons button {
+        padding: 15px 18px;
+        background: var(--white);
+        border: none;
+        border-radius: 6px;
+    }
 
 
 /* HERO END */
@@ -554,6 +564,7 @@ h4 {
     /* HERO START */
         .hero {
             height: 660px;
+            position: relative;
         }
 
         .hero .container {
@@ -571,14 +582,22 @@ h4 {
             font-size: 40px;
             line-height: 48px;
         }
-    
-        .hero .cardUser {
-            display: grid;
-            grid-template-columns: 28px auto;
-            gap: 12px;
-            align-items: flex-start;
+
+        .heroButtons {
+            display: block;
         }
     
+        .heroButtons .btnLeft {
+            position: absolute;
+            left: 24px;
+            top: 301px;
+        }
+
+        .heroButtons .btnRight {
+            position: absolute;
+            right: 24px;
+            top: 301px;
+        }
 
     /* HERO END */
 
