@@ -152,6 +152,7 @@ h4 {
 
     .subMenu.openMenu {
         max-height: 400px;
+        z-index: 99;
     }
 
     .subMenu hr {
@@ -559,6 +560,11 @@ h4 {
             grid-template-columns: auto auto;
             gap: 48px;
             align-items: center;
+        }
+
+        .subMenu {
+            right: 120px;
+            top: 70px;
         }
     /* HEADER END */
 
