@@ -125,7 +125,7 @@ h4 {
         position: relative;
         max-width: 1110px;
         margin: 0 auto;
-        padding: 16px 15px 0;
+        padding: 16px 15px;
     }
 
     .user,
@@ -194,6 +194,41 @@ h4 {
 
 
 /* HERO START */
+    .hero {
+        background: url('../img/hero.jpg');
+        background-size: 100% 100%;
+        height: 330px;
+    }
+
+    .hero .container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0 15px;
+        height: 330px;
+        display: grid;
+        align-items: end;
+    }
+
+    .hero .content {
+        width: 270px;
+        background: var(--white);
+        padding: 24px;
+        margin-bottom: 18px;
+    }
+
+    .hero .content h1 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .hero .cardUser {
+        display: grid;
+        grid-template-columns: 28px auto;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
 
 
 /* HERO END */
@@ -273,7 +308,7 @@ h4 {
         align-items: flex-start;
     }
 
-    .callToActionContent .cardUser img {
+    .cardUser img {
         border-radius: 50%;
     }
 
@@ -487,9 +522,7 @@ h4 {
 
     /* HEADER START */
         header {
-            max-width: 1110px;
-            margin: 0 auto;
-            padding: 16px 0 0;
+            padding: 32px 0;
         }
 
         .user,
@@ -519,7 +552,33 @@ h4 {
 
 
     /* HERO START */
+        .hero {
+            height: 660px;
+        }
 
+        .hero .container {
+            height: 660px;
+        }
+    
+        .hero .content {
+            width: 541px;
+            padding: 48px;
+            margin-bottom: 36px;
+        }
+    
+        .hero .content h1 {
+            margin-bottom: 16px;
+            font-size: 40px;
+            line-height: 48px;
+        }
+    
+        .hero .cardUser {
+            display: grid;
+            grid-template-columns: 28px auto;
+            gap: 12px;
+            align-items: flex-start;
+        }
+    
 
     /* HERO END */
 
