@@ -391,7 +391,7 @@ h4 {
     }
 
     .callToActionInput .content {
-        width: 426px;
+        width: 100%;
         text-align: center;
         padding: 38px 0;
     }
@@ -407,7 +407,7 @@ h4 {
     }
 
     .callToActionInput input {
-        width: 366px;
+        width: 100%;
         height: 49px;
         padding-left: 16px;
         padding-right: 65px;
@@ -420,7 +420,7 @@ h4 {
         padding: 12.5px 22px;
         background: var(--primary-blue);
         position: absolute;
-        right: 31px;
+        right: 1px;
         top: 1px;
         border: 0;
         border-radius: 0 2px 2px 0;
@@ -444,14 +444,15 @@ h4 {
         }
 
         .footerLists .container {
-            display: grid;
-            gap: 24px;
+            /* display: grid;
+            gap: 24px; */
         }
 
         .listMain {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 24px;
+            margin-bottom: 24px;
         }
 
         .listItem {
@@ -465,7 +466,7 @@ h4 {
         }
 
         .footerForm {
-            width: 354px;
+            width: 100%;
         }
 
         .footerForm p {
@@ -477,7 +478,7 @@ h4 {
         }
 
         .footerForm input {
-            width: 354px;
+            width: 100%;
             height: 49px;
             padding-left: 16px;
             padding-right: 65px;
@@ -698,7 +699,15 @@ h4 {
             margin-bottom: 120px;
         }
 
+        .callToActionInput input {
+            width: 366px;
+        }
+
+        .callToActionInput form button {
+            right: 31px;
+        }
         .callToActionInput .content {
+            width: 426px;
             padding: 77px 0;
         }
 
@@ -715,11 +724,21 @@ h4 {
             }
 
             .footerLists .container {
-                grid-template-columns: 732px 354px;
+                display: grid;
+                gap: 24px;
+                grid-template-columns: 2fr 1fr;
             }
 
             .listMain {
                 grid-template-columns: repeat(4,1fr);
+            }
+
+            .footerForm input {
+                width: 354px;
+            }
+
+            .footerForm {
+                width: 354px;
             }
 
             .footerForm p {
