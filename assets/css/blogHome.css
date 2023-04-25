@@ -147,7 +147,7 @@ h4 {
         max-height: 0px;
         border-radius: 10px;
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: max-height 0.5s ease-in-out;
     }
 
     .subMenu.openMenu {
@@ -441,11 +441,6 @@ h4 {
         .footerLists {
             border-top: 1px solid var(--bg-gray);
             padding: 36px 0;
-        }
-
-        .footerLists .container {
-            /* display: grid;
-            gap: 24px; */
         }
 
         .listMain {
