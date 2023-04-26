@@ -239,6 +239,7 @@ h4 {
         background: var(--white);
         border: none;
         border-radius: 6px;
+        cursor: pointer;
     }
 
 
